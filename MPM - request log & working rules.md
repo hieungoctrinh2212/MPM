@@ -345,6 +345,10 @@ Owner: Kelvin Nguyễn (MACUSAONE, Full seat). Last updated: 10/08/2026.
 | --- | --- | --- |
 | 158 | Drop the month from the trend's x-axis, show the day only | Both charts (4862:68066, 4877:70977): the 7 "11/dd" labels replaced by 30 day labels 01 → 30, one under each point (layers "Day 01" … "Day 30"); the month stays in the card title "Task trend, 11/2026". User-approved exception to the mm/dd/yyyy rule for chart axes |
 
+| # | Request | Result / deliverable (node id) |
+| --- | --- | --- |
+| 159 | Add a tooltip to the Task trend chart | New local components in "Task baseline — Components": Trend Tooltip Row 4914:70508 (Series=Todo / In progress / Overdue / Missing social posts; swatch, label, Value text prop) and Trend Tooltip 4914:70509 (popover color, border, rounded-md, shadow-md; Date text prop + 3 exposed Trend Tooltip Rows). Mac DS Chart tooltip (377ab5de…) was not used: none of its 3 variants has 3 series rows. Hover state shown on day 18 in both charts (4862:68066, 4877:70977): group "Hover / 11/18" (vertical guide line + 10 px active points with card-color ring) and tooltip "Wed, 11/18/2026": Todo / In progress 2,960, Overdue 1,480, Missing social posts 305 |
+
 ## 3. Open items / waiting for confirmation
 
 - [ ] **Table Header (Mac DS):** `Content=Sortable` renders white while `Content=Text` is grey → report to DS team.
