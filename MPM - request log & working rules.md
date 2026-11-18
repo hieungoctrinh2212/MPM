@@ -361,6 +361,10 @@ Owner: Kelvin Nguyễn (MACUSAONE, Full seat). Last updated: 10/08/2026.
 | --- | --- | --- |
 | 162 | Chart lines too flat, make them go up and down more | New sample data with larger daily swings in both charts (4862:68066, 4877:70977): Todo / In progress 2,350 to 3,400, Overdue 1,050 to 1,900, Missing social posts 220 to 620; day 30 still matches the Overview cards (3,000 / 1,505 / 300) and day 29 matches the "vs yesterday" deltas. Lines, 30 daily points (renamed "mm/dd value"), hover points and the 11/18 tooltip (2,700 / 1,350 / 540) updated |
 
+| # | Request | Result / deliverable (node id) |
+| --- | --- | --- |
+| 163 | Use sharp (straight) lines instead of smooth curves | Both charts (4862:68066, 4877:70977): the 3 "Line / …" vectors redrawn as straight segments between the daily points (miter joins); points, hover state and tooltip unchanged |
+
 ## 3. Open items / waiting for confirmation
 
 - [ ] **Table Header (Mac DS):** `Content=Sortable` renders white while `Content=Text` is grey → report to DS team.
