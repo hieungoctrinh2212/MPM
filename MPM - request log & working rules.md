@@ -353,6 +353,10 @@ Owner: Kelvin Nguyễn (MACUSAONE, Full seat). Last updated: 10/08/2026.
 | --- | --- | --- |
 | 160 | Update the dashboard style to match the earlier dashboards (AM Dashboard 1596:28887, Dashboard Webtask 844:22685) | In both screens (4860:67783, 4877:70952) the Task trend, AM workload and Overdue by task type panels now follow the "Project Expiring Soon" / "New Website Trends" card: no grey panel, border general/border, rounded-xl, clip; header inside the card (title paragraph/medium + muted paragraph mini subtitle, gap 3xs, padding sm (md horizontal on the chart), bottom divider); tables inset by sm in a "Table" frame with radius; no row dividers (Task Type Tree Cell stroke removed, Table Cell Show border off). Chart: smooth curves, gradient areas under each line (stops bound to series color and card/card, opacity 16%), dashed hover guide, day labels paragraph mini/medium in secondary foreground. Trend Tooltip Row swatch replaced by the dashed vertical indicator of the earlier chart tooltip. Overview panel kept (already the AM Dashboard style). Screens resized to 2083 tall; popover state screen moved to y 2338 with its dialog |
 
+| # | Request | Result / deliverable (node id) |
+| --- | --- | --- |
+| 161 | No linear gradient on the chart | Removed the 3 "Area / …" gradient fills under the lines in both charts (4862:68066, 4877:70977); smooth lines, daily points, dashed hover guide and tooltip kept |
+
 ## 3. Open items / waiting for confirmation
 
 - [ ] **Table Header (Mac DS):** `Content=Sortable` renders white while `Content=Text` is grey → report to DS team.
