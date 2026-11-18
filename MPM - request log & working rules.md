@@ -341,6 +341,10 @@ Owner: Kelvin Nguyễn (MACUSAONE, Full seat). Last updated: 10/08/2026.
 | --- | --- | --- |
 | 157 | One point per day on the Task trend | Both charts (4862:68066, 4877:70977): each line has 30 point markers (6 px, series color, 1 px card-color ring), grouped as "Points / Todo / In progress", "Points / Overdue", "Points / Missing social posts"; each point named "mm/dd value" for handoff; end dots replaced |
 
+| # | Request | Result / deliverable (node id) |
+| --- | --- | --- |
+| 158 | Drop the month from the trend's x-axis, show the day only | Both charts (4862:68066, 4877:70977): the 7 "11/dd" labels replaced by 30 day labels 01 → 30, one under each point (layers "Day 01" … "Day 30"); the month stays in the card title "Task trend, 11/2026". User-approved exception to the mm/dd/yyyy rule for chart axes |
+
 ## 3. Open items / waiting for confirmation
 
 - [ ] **Table Header (Mac DS):** `Content=Sortable` renders white while `Content=Text` is grey → report to DS team.
