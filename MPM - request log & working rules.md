@@ -333,6 +333,10 @@ Owner: Kelvin Nguyễn (MACUSAONE, Full seat). Last updated: 10/08/2026.
 | --- | --- | --- |
 | 155 | Assigned Task popup for the Task baseline dashboard (tab "Note cho a Chí": Sale AM, AM team, Note, Telegram link, customer profile; Demo: "pop up task, do it in place") | Entry point: Outline Small button "Assigned to me (2)" (clipboard-check icon) right-aligned in the header slot of 4860:67783. New state screen 4877:70952 "AM Dashboard — Task baseline (Assigned to me open)" (section 4860:67782, x 100, y 2250) with Popover content 4877:71312 (440 wide): title, helper line, 2 Mac DS Items (Outline) with title, "#id  project, due date" and a "Do task" button: [AM] Assign Account Manager (#2051 12345 ABC Salon) and [AM] Google Maps - Setup Reply Review (#2047 Lux Nail Bar). Dialog 4876:69079 "Dialog / Assign Account Manager" (x 1640, y 2250, cloned from the Report dialog 3314:62094, 640 wide): header "[AM] Assign Account Manager" + "#2051  12345 ABC Salon, due 11/18/2026"; muted "Customer" block with Detail Rows Sale AM, Telegram (Link), Personality, Marketing level, Salon size; Vertical Field selects AM team * (Team 2) and Account manager * (Nguyễn Văn D) with a workload hint from the AM workload table; Note for the AM textarea; footer Cancel / Assign AM (Small). Assumptions: customer profile values translated to English (Kỹ tính → Picky, Có biết → Knows the basics, Vừa (10-30 ghế) → Medium (10 to 30 chairs)); only the Assign Account Manager task has a dialog, the Google Maps task would open its own form |
 
+| # | Request | Result / deliverable (node id) |
+| --- | --- | --- |
+| 156 | Task trend should show the whole month | Chart 4862:68066 (screen 4860:67783) and 4877:70977 (popover state 4877:70952): the 3 lines now run 11/01 → 11/30 with 30 daily points, end dots on 11/30 (last values 3,000 / 1,505 / 300, matching the Overview cards); "Today 11/17" marker, dashed line and today dots removed. Sample data |
+
 ## 3. Open items / waiting for confirmation
 
 - [ ] **Table Header (Mac DS):** `Content=Sortable` renders white while `Content=Text` is grey → report to DS team.
