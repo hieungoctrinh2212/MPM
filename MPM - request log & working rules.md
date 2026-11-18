@@ -349,6 +349,10 @@ Owner: Kelvin Nguyễn (MACUSAONE, Full seat). Last updated: 10/08/2026.
 | --- | --- | --- |
 | 159 | Add a tooltip to the Task trend chart | New local components in "Task baseline — Components": Trend Tooltip Row 4914:70508 (Series=Todo / In progress / Overdue / Missing social posts; swatch, label, Value text prop) and Trend Tooltip 4914:70509 (popover color, border, rounded-md, shadow-md; Date text prop + 3 exposed Trend Tooltip Rows). Mac DS Chart tooltip (377ab5de…) was not used: none of its 3 variants has 3 series rows. Hover state shown on day 18 in both charts (4862:68066, 4877:70977): group "Hover / 11/18" (vertical guide line + 10 px active points with card-color ring) and tooltip "Wed, 11/18/2026": Todo / In progress 2,960, Overdue 1,480, Missing social posts 305 |
 
+| # | Request | Result / deliverable (node id) |
+| --- | --- | --- |
+| 160 | Update the dashboard style to match the earlier dashboards (AM Dashboard 1596:28887, Dashboard Webtask 844:22685) | In both screens (4860:67783, 4877:70952) the Task trend, AM workload and Overdue by task type panels now follow the "Project Expiring Soon" / "New Website Trends" card: no grey panel, border general/border, rounded-xl, clip; header inside the card (title paragraph/medium + muted paragraph mini subtitle, gap 3xs, padding sm (md horizontal on the chart), bottom divider); tables inset by sm in a "Table" frame with radius; no row dividers (Task Type Tree Cell stroke removed, Table Cell Show border off). Chart: smooth curves, gradient areas under each line (stops bound to series color and card/card, opacity 16%), dashed hover guide, day labels paragraph mini/medium in secondary foreground. Trend Tooltip Row swatch replaced by the dashed vertical indicator of the earlier chart tooltip. Overview panel kept (already the AM Dashboard style). Screens resized to 2083 tall; popover state screen moved to y 2338 with its dialog |
+
 ## 3. Open items / waiting for confirmation
 
 - [ ] **Table Header (Mac DS):** `Content=Sortable` renders white while `Content=Text` is grey → report to DS team.
