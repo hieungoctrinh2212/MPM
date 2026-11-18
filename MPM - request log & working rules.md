@@ -337,6 +337,10 @@ Owner: Kelvin Nguyễn (MACUSAONE, Full seat). Last updated: 10/08/2026.
 | --- | --- | --- |
 | 156 | Task trend should show the whole month | Chart 4862:68066 (screen 4860:67783) and 4877:70977 (popover state 4877:70952): the 3 lines now run 11/01 → 11/30 with 30 daily points, end dots on 11/30 (last values 3,000 / 1,505 / 300, matching the Overview cards); "Today 11/17" marker, dashed line and today dots removed. Sample data |
 
+| # | Request | Result / deliverable (node id) |
+| --- | --- | --- |
+| 157 | One point per day on the Task trend | Both charts (4862:68066, 4877:70977): each line has 30 point markers (6 px, series color, 1 px card-color ring), grouped as "Points / Todo / In progress", "Points / Overdue", "Points / Missing social posts"; each point named "mm/dd value" for handoff; end dots replaced |
+
 ## 3. Open items / waiting for confirmation
 
 - [ ] **Table Header (Mac DS):** `Content=Sortable` renders white while `Content=Text` is grey → report to DS team.
